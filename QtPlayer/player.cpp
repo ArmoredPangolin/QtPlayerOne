@@ -150,10 +150,12 @@ bool Player::isPlayerAvailable() const
 
 void Player::open()
 {
+    qDebug() << "Var";
     QFileDialog fileDialog(this);
     fileDialog.setAcceptMode(QFileDialog::AcceptOpen);
     fileDialog.setWindowTitle(tr("Open Files"));
-    QStringList supportedMimeTypes = m_player->supportedMimeTypes();
+    QStringList supportedMimeTypes = QStringList("audio/mp3");
+    qDebug() << supportedMimeTypes;
     if (!supportedMimeTypes.isEmpty()) {
         supportedMimeTypes.append("audio/x-m3u"); // MP3 playlists
         fileDialog.setMimeTypeFilters(supportedMimeTypes);

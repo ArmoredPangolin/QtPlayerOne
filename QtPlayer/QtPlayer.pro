@@ -18,5 +18,7 @@ SOURCES = main.cpp \
     playlistmodel.cpp \
     histogramwidget.cpp
 
-target.path = $$[QT_INSTALL_EXAMPLES]/multimediawidgets/player
+CONFIG += app_bundle
+
+target.path = $$PWD/multimediawidgets/PlayerOne
 INSTALLS += target
