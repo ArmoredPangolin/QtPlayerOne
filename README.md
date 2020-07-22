@@ -2,8 +2,9 @@
 Player Music QT
 
 Contenu:
-    QtPlayer: -> Dossier projet.
-    QtStaticPlugAndPlay.zip: -> Archive avec executale compressé compatible mac.
+QtPlayer: -> Dossier projet.
+    
+QtStaticPlugAndPlay.zip: -> Archive avec executale compressé compatible mac.
     
 macdeployqt se trouve dans le répertoire "Qt/"    
     
